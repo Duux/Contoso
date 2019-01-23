@@ -15,6 +15,13 @@ namespace ContosoU_2019.Controllers
             return View();
         }
 
+        //Demo: Adding the about to http get method
+        public IActionResult About()
+        {
+            return View();
+        }
+
+
         public IActionResult Privacy()
         {
             return View();

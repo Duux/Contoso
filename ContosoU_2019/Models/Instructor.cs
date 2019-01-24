@@ -16,5 +16,8 @@ namespace ContosoU_2019.Models
         //An instructor can teach ny number of courses, so Courses is defined as a collection of the CourseAssignment Entity
         public virtual ICollection<CourseAssignment> Courses { get; set; }
 
+        //An instructor can only have at most one office, so the officeassignment navigation property holds a single office assignment entity
+        //(which may be null when no office is assigned)
+        public virtual OfficeAssignment OfficeAssignment { get; set; }
     }
 }

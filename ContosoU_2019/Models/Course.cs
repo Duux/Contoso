@@ -36,5 +36,9 @@ namespace ContosoU_2019.Models
         //Navigation Properties
         //1 course to many enrollments
         public virtual ICollection<Enrollment> Enrollments { get; set; }
+
+        //A course can only belong at most to one department, so the Department property 
+        //holds a single Department Entity (which may be null if no department is assigned)
+        public virtual Department Department { get; set; }
     }
 }

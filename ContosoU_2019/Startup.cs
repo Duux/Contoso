@@ -59,6 +59,7 @@ namespace ContosoU_2019
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
+                app.UseBrowserLink();
             }
             else
             {
